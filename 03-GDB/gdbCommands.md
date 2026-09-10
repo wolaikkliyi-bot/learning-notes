@@ -81,7 +81,7 @@ break main
 简写：
 
 ```gdb
-b main
+b main     //是停在函数开始的位置
 ```
 
 
@@ -224,6 +224,16 @@ $1 = 10
 info locals
 ```
 
+每次运行查看:
+
+```gdb
+display x
+display y
+delete display 1 //删除某个 //按照前面的编号来
+```
+
+
+
 
 ---
 
@@ -347,7 +357,7 @@ x address
 
 
 |命令|作用|
-|-|-|
+|:--|-|
 |r / run|运行程序|
 |b / break|设置断点|
 |n / next|下一步|
@@ -356,7 +366,8 @@ x address
 |p / print|查看变量|
 |l / list|查看源码|
 |bt|查看调用栈|
-|q|退出|
+| q                       | 退出         |
+| display/ delete display | 每次运行查看 |
 
 
 ---
